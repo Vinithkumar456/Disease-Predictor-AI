@@ -61,7 +61,7 @@ Disease-Predictor/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com//disease-predictor.git
+git clone https://github.com/Vinithkumar456/Disease-Predictor-AI.git
 cd disease-predictor
 ```
 
