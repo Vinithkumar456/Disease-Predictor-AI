@@ -1,107 +1,70 @@
-# 🧠 Disease Predictor using Machine Learning
+# 🧠 Disease Predictor
 
-A smart disease prediction system built with **React.js** for the frontend and **Python (Flask)** for the backend. The model predicts possible diseases based on user-selected symptoms and provides descriptions and precautions.
+An AI-based disease prediction system that analyzes user symptoms and suggests possible diseases using a trained machine learning model.
 
----
+## 🏗️ Tech Stack
 
-## 📊 Dataset
+- Frontend: React.js
+- Backend: Node.js + Express
+- Machine Learning: Python (scikit-learn, pandas)
+- Dataset: Kaggle – Disease Symptom Description
 
-- **Source**: [Disease Symptom Description Dataset – Kaggle](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset)
-- Includes:
-  - Symptom-to-disease mappings
-  - Disease descriptions
-  - Precautionary measures
-
-> ⚠️ **Note**: The full dataset is not included in this repo. Only a sample is provided (`sample_symptoms.csv`). Please download the full dataset from [Kaggle](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset) for training.
-
----
 
 ## 💡 Features
 
-- ✅ Predict diseases based on symptoms
-- ✅ Display detailed disease descriptions
-- ✅ Show recommended precautions
-- ✅ Clean, interactive React UI
-- ✅ Trained machine learning model using scikit-learn
+- Predicts diseases based on selected symptoms
+- Shows descriptions and precautions
+- Trained using real medical symptom data
+- Responsive React frontend
+- Real-time inference using Python model via Node backend
 
----
+## 📊 Dataset
 
-## ⚙️ Tech Stack
+Kaggle Source: https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset
 
-| Layer      | Technology               |
-|------------|--------------------------|
-| Frontend   | React.js                 |
-| Backend    | Node.js                  |
-| ML Model   | scikit-learn             |
-| Dataset    | Kaggle (linked above)    |
+Files used:
+- Symptom-severity.csv
+- symptom_Description.csv
+- symptom_precaution.csv
+- dataset.csv
 
----
+## 🚀 How to Run Locally
 
-## 📂 Project Structure
+1. Clone the repository:
+   git clone https://github.com/Vinithkumar456/disease-predictor.git
+   cd disease-predictor
 
-```
-Disease-Predictor/
-├── backend/                # Flask backend + trained model
-│   ├── app.py
-│   └── model.pkl
-├── frontend/               # React frontend
-│   └── src/
-├── model/                  # Jupyter notebook + sample data
-│   ├── train_model.ipynb
-│   └── sample_symptoms.csv
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
+2. Install backend dependencies:
+   cd backend
+   npm install
 
----
+3. Install frontend dependencies:
+   cd ../frontend
+   npm install
 
-## 🚀 Getting Started
+4. Start backend server:
+   cd ../backend
+   npm start
 
-### 1️⃣ Clone the Repository
+5. Start frontend:
+   cd ../frontend
+   npm start
 
-```bash
-git clone https://github.com/Vinithkumar456/Disease-Predictor-AI.git
-cd disease-predictor
-```
-
-### 2️⃣ Run Backend (Flask)
-
-```bash
-cd backend
-pip install -r ../requirements.txt
-python app.py
-```
-
-### 3️⃣ Run Frontend (React)
-
-```bash
-cd ../frontend
-npm install
-npm start
-```
-
-- Frontend: `http://localhost:3000`
-- Backend API: `http://localhost:5000`
-
----
+Frontend: http://localhost:3000  
+Backend API: http://localhost:5000
 
 ## 🔮 Future Improvements
 
-- Deploy the app (Render, Netlify, or Vercel + Heroku)
-- Add multilingual support
-- Include user authentication
-- Make model more robust with larger datasets
-
----
+- Deploy backend and frontend
+- Add login/authentication
+- Improve model accuracy
+- Add health tips & chatbot
 
 ## 🙏 Acknowledgements
 
-- Dataset by [Itachi9604 on Kaggle](https://www.kaggle.com/datasets/itachi9604/disease-symptom-description-dataset)
-- Flask, React, scikit-learn documentation
+- Dataset by Itachi9604 on Kaggle
+- Built with React, Node, Express, Python, and scikit-learn
 
----
-
-## 📜 License
+## 📄 License
 
 This project is open-source and free to use for educational purposes.
